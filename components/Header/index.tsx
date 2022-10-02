@@ -1,7 +1,13 @@
 import { Box, Button, Heading, HStack, useColorMode } from "@chakra-ui/react";
 import Link from "next/link";
 import Image from "next/image";
-import { GithubLogo, MagnifyingGlass, Moon, Sun } from "phosphor-react";
+import {
+  DiscordLogo,
+  GithubLogo,
+  MagnifyingGlass,
+  Moon,
+  Sun,
+} from "phosphor-react";
 
 function Header() {
   const { colorMode, setColorMode } = useColorMode();
@@ -44,6 +50,15 @@ function Header() {
               rel="noopener noreferrer"
             >
               <GithubLogo size={24} />
+            </a>
+          </Button>
+          <Button>
+            <a
+              href="https://discord.gg/yRCcQmC45h"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <DiscordLogo size={24} />
             </a>
           </Button>
           <Button disabled>
