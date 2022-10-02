@@ -2,6 +2,7 @@ import {
   Box,
   chakra,
   Container,
+  Link,
   Stack,
   Text,
   useColorModeValue,
@@ -46,6 +47,7 @@ const SocialButton = ({
 export default function SmallWithLogoLeft() {
   return (
     <Box
+      mt={8}
       bg={useColorModeValue("gray.50", "gray.900")}
       color={useColorModeValue("gray.700", "gray.200")}
     >
@@ -64,7 +66,37 @@ export default function SmallWithLogoLeft() {
           height={68}
           alt="Reactra"
         />
-        <Text>Released under the MIT License</Text>
+        <Stack spacing={"2"}>
+          <Text textAlign={"center"}>Released under the MIT License</Text>
+          <Text textAlign={"center"}>
+            Built with{" "}
+            <Link
+              textUnderlineOffset={2}
+              sx={{
+                textDecoration: "underline",
+              }}
+              href="https://chakra-ui.com/"
+              target={"_blank"}
+              rel={"noopener noreferrer"}
+            >
+              Chakra UI
+            </Link>
+          </Text>
+          <Text textAlign={"center"}>
+            Illustrations from{" "}
+            <Link
+              textUnderlineOffset={2}
+              sx={{
+                textDecoration: "underline",
+              }}
+              href="https://undraw.co/"
+              target={"_blank"}
+              rel={"noopener noreferrer"}
+            >
+              Undraw
+            </Link>
+          </Text>
+        </Stack>
         <Stack direction={"row"} spacing={6}>
           <SocialButton label={"GitHub"} href="#">
             <a

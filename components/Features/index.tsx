@@ -1,4 +1,5 @@
 import { ReactElement } from "react";
+import Image from "next/image";
 import { Box, SimpleGrid, Text, Stack, Flex, Icon } from "@chakra-ui/react";
 import { Brain, CheckCircle, Smiley } from "phosphor-react";
 
@@ -56,7 +57,14 @@ export default function SimpleThreeColumns() {
           }
         />
         <Feature
-          icon={<img src="images/typescript.svg" width={24} alt="TypeScript" />}
+          icon={
+            <Image
+              src="images/typescript.svg"
+              width={24}
+              height={24}
+              alt="TypeScript"
+            />
+          }
           title={"TypeScript support"}
           text={"Reactra comes with TypeScript support out of the box."}
         />

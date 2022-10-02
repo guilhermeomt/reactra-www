@@ -9,7 +9,7 @@ import {
   Stack,
 } from "@chakra-ui/react";
 
-export default function CallToActionWithVideo() {
+export default function CallToActionWithImage() {
   return (
     <Container maxW={"7xl"}>
       <Stack
@@ -41,15 +41,29 @@ export default function CallToActionWithVideo() {
               Write clean code,
             </Text>
             <br />
-            <Text as={"span"} color={"brand.2 00"}>
+            <Text as={"span"} color={"brand.200"}>
               and be successful!
             </Text>
           </Heading>
           <Text color={"gray.500"}>
-            Reactra is an opionated open-source UI framework that helps you |
-            build React apps with speed and using the best practices. It&apos;s
-            a | great choice for React developers who want to build performant
-            and | accessible web apps.&gt;
+            <Text
+              fontWeight={"black"}
+              display={"inline-block"}
+              color="accent.100"
+            >
+              React
+              <Text
+                fontWeight={"black"}
+                display={"inline-block"}
+                color="brand.200 "
+              >
+                ra
+              </Text>
+            </Text>{" "}
+            is an opinionated open-source UI framework that helps you build
+            React apps with speed and using the best practices. It's a great
+            choice for React developers who want to build performant and
+            accessible web apps.
           </Text>
           <Stack
             spacing={{ base: 4, sm: 6 }}
@@ -61,7 +75,7 @@ export default function CallToActionWithVideo() {
               fontWeight={"normal"}
               px={6}
               variant={"solid"}
-              colorScheme={"blue  "}
+              colorScheme={"blue"}
             >
               Get started
             </Button>
