@@ -83,6 +83,20 @@ export default function SmallWithLogoLeft() {
             </Link>
           </Text>
           <Text textAlign={"center"}>
+            Powered by{" "}
+            <Link
+              textUnderlineOffset={2}
+              sx={{
+                textDecoration: "underline",
+              }}
+              href="https://nextjs.org/"
+              target={"_blank"}
+              rel={"noopener noreferrer"}
+            >
+              Next.js
+            </Link>
+          </Text>
+          <Text textAlign={"center"}>
             Illustrations from{" "}
             <Link
               textUnderlineOffset={2}

@@ -39,21 +39,21 @@ export default function SimpleThreeColumns() {
           icon={<Brain size={24} color="#b34c66" />}
           title={"Object-oriented and functional approach"}
           text={
-            "Object-oriented approach to building UI components. This makes it easy to reuse components and build complex UIs."
+            "An object-oriented and functional approach to building UI makes it easy to reuse components and build complex UIs."
           }
         />
         <Feature
           icon={<CheckCircle size={24} color="#7c9e1f" />}
           title={"Best practices"}
           text={
-            "The main goal of Reactra is to allows developers to write clean code, using principles like SOLID."
+            "The main goal of Reactra is to allow developers to write clean code, using principles like SOLID, DRY, and KISS."
           }
         />
         <Feature
           icon={<Smiley size={24} color="#c98917" />}
           title={"Easy to use"}
           text={
-            "Reactra is opinionated and comes with a set of features like a CLI allowing project scaffold."
+            "Reactra is opinionated and comes with a set of features like a CLI for project scaffold."
           }
         />
         <Feature
@@ -65,7 +65,7 @@ export default function SimpleThreeColumns() {
               alt="TypeScript"
             />
           }
-          title={"TypeScript support"}
+          title={"TypeScript Support"}
           text={"Reactra comes with TypeScript support out of the box."}
         />
       </SimpleGrid>
