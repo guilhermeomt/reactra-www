@@ -9,7 +9,7 @@ import {
   VisuallyHidden,
 } from "@chakra-ui/react";
 import Image from "next/image";
-import { GithubLogo } from "phosphor-react";
+import { DiscordLogo, GithubLogo } from "phosphor-react";
 import { ReactNode } from "react";
 
 const SocialButton = ({
@@ -89,6 +89,18 @@ export default function SmallWithLogoLeft() {
               sx={{
                 textDecoration: "underline",
               }}
+              href="https://vercel.com/"
+              target={"_blank"}
+              rel={"noopener noreferrer"}
+            >
+              Vercel
+            </Link>{" "}
+            <span>and</span>{" "}
+            <Link
+              textUnderlineOffset={2}
+              sx={{
+                textDecoration: "underline",
+              }}
               href="https://nextjs.org/"
               target={"_blank"}
               rel={"noopener noreferrer"}
@@ -119,6 +131,15 @@ export default function SmallWithLogoLeft() {
               rel="noopener noreferrer"
             >
               <GithubLogo />
+            </a>
+          </SocialButton>
+          <SocialButton label={"Discord"} href="#">
+            <a
+              href="https://discord.gg/yRCcQmC45h"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <DiscordLogo />
             </a>
           </SocialButton>
         </Stack>

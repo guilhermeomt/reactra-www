@@ -79,7 +79,15 @@ export default function CallToActionWithImage() {
             >
               Get started
             </Button>
-            <Button rounded={"full"} size={"lg"} fontWeight={"normal"} px={6}>
+            <Button
+              rounded={"full"}
+              size={"lg"}
+              fontWeight={"normal"}
+              variant={"outline"}
+              colorScheme={"green"}
+              _hover={{ opacity: 0.8 }}
+              px={6}
+            >
               How It Works
             </Button>
           </Stack>
